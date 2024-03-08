@@ -18,5 +18,9 @@ public interface EmployeeService {
     //新增员工
     void save(EmployeeDTO employeeDTO);
 
+    //查询员工
     PageResult pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+    //启用禁用员工
+    void startOrStop(Integer status, Long id);
+
 }
